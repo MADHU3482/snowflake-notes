@@ -1,3 +1,4 @@
+//This is my sql assignments 
 SELECT * FROM EMPLOYEES
 select * from jobs
 select * from departments
@@ -195,7 +196,6 @@ having count(department_id) > 3
  
 
 
-
 49) Display the various jobs along with
 total salary for each of the jobs 
 Where total salary is greater than 40000. 
@@ -204,8 +204,6 @@ select job_title , sum(salary) from jobs left outer join employees
 on jobs.job_id = employees.job_id
 group by job_title
 having sum(salary)>40000
-
-
 
 
 
@@ -222,7 +220,6 @@ having  count(employee_id) > 3
 
 
 
-
 51) Display the name of the employee who
 earns highest salary. 
 
@@ -230,8 +227,6 @@ select top 1 First_name from employees
 order by salary desc
 
  
-
-
 
 52) Display the employee number and name
 for employee working as clerk and 
@@ -267,7 +262,6 @@ select job_title from jobs
     where job_title = 'CLERK' and salary > 4(select top 1 min_salary from jobs
                                                     where job_title = 'SALESMAN'
                                                     order by min_salary )
-
 
 
 
