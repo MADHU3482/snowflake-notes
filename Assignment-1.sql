@@ -13,8 +13,6 @@ where job_id in (select job_id from jobs
                  where job_title = 'CLERK')
 
 
-
-
 32) Display the maximum salary being paid
 to depart number 20. 
 
@@ -34,8 +32,7 @@ where job_id in (select job_id from jobs
                  where job_title = 'SALESMAN')
 
 
-
-
+//--------------
 34) Display the average salary drawn by
 MANAGERS. 
 
